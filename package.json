@@ -9,7 +9,7 @@
   "author": "bloodyowl",
   "license": "MIT",
   "dependencies": {
-    "bloody-promise": "^0.2.1",
+    "bloody-promise": "^0.2.3",
     "bloody-class": "^1.2.2"
   },
   "testling": {
