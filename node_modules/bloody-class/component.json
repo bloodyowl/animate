@@ -1,0 +1,14 @@
+{
+  "name": "class",
+  "repo": "bloodyowl/class",
+  "description": "Simple JavaScript Class pattern",
+  "version": "1.0.0",
+  "keywords": ["class"],
+  "dependencies": {},
+  "development": {},
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": [
+    "index.js"
+  ]
+}
