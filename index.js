@@ -1,5 +1,4 @@
 var promise = require("bloody-promise")
-var cssSupport = require("bloody-csssupport")
 var animation = require("./lib/support-animation")
 var keyframes = require("./lib/support-keyframes")
 var eventSupport = require("./lib/support-event")
