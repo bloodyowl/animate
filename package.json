@@ -10,7 +10,6 @@
   "license": "MIT",
   "dependencies": {
     "bloody-promise": "^0.2.1",
-    "bloody-csssupport": "^0.1.0",
     "bloody-class": "^1.2.2"
   },
   "testling": {
