@@ -1,5 +1,7 @@
 # animate
 
+[![browser support](https://ci.testling.com/bloodyowl/animate.png))](https://ci.testling.com/bloodyowl/animate)
+
 ## install
 
 ```sh
