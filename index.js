@@ -19,13 +19,13 @@ function hasAnimation(element, cssText){
     element.addEventListener(eventName, fulfill, false)
     function fulfill(){
       if(typeof cssText == "string") {
-        element.style[animation] = null
+        element.style[animation] = ""
       }
       animationPromise.fulfill(+new Date())
       element.removeEventListener(eventName, fulfill, false)
     }
     if(typeof cssText == "string") {
-      element.style[animation] = null
+      element.style[animation] = ""
       element.style[animation] = cssText
       if(!element.style[animation]) {
         animationPromise.fulfill(+new Date())
