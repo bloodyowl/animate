@@ -1,6 +1,6 @@
 {
   "name": "bloody-animate",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -9,8 +9,7 @@
   "author": "bloodyowl",
   "license": "MIT",
   "dependencies": {
-    "bloody-promise": "^0.2.3",
-    "bloody-class": "^1.2.2"
+    "bloody-promise": "^1.0.0"
   },
   "testling": {
     "files": "test/**.js",

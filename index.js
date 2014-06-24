@@ -15,23 +15,23 @@ module.exports = function(element, cssText){
 
 function hasAnimation(element, cssText){
   return function(eventName){
-    var animationPromise = promise.create()
-    element.addEventListener(eventName, fulfill, false)
-    function fulfill(){
+    return promise.create(function(resolve){
+      element.addEventListener(eventName, fulfill, false)
+      function fulfill(){
+        if(typeof cssText == "string") {
+          element.style[animation] = ""
+        }
+        resolve(+new Date())
+        element.removeEventListener(eventName, fulfill, false)
+      }
       if(typeof cssText == "string") {
         element.style[animation] = ""
+        element.style[animation] = cssText
+        if(!element.style[animation]) {
+          resolve(+new Date())
+        }
       }
-      animationPromise.fulfill(+new Date())
-      element.removeEventListener(eventName, fulfill, false)
-    }
-    if(typeof cssText == "string") {
-      element.style[animation] = ""
-      element.style[animation] = cssText
-      if(!element.style[animation]) {
-        animationPromise.fulfill(+new Date())
-      }
-    }
-    return animationPromise
+    })
   }
 }
 
